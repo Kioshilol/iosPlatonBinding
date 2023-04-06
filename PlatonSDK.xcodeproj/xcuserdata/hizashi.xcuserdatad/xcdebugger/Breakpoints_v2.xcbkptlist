@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "BD761EA2-691F-41E4-9480-E3CE3868636A"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A81B0457-2D67-4DB2-8F14-CB36CF90BB6C"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Sample/ViewControllers/Post/ApplePayViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "75"
+            endingLineNumber = "75"
+            landmarkName = "proceed(payment:successHandler:failureHandler:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "93C4CEC5-2A32-4D01-981B-3D334A905E6B"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PlatonSDK/Models/Response/PlatonApplePay.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "13"
+            endingLineNumber = "13"
+            landmarkName = "init(action:result:orderId:transId:transDate:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "93C4CEC5-2A32-4D01-981B-3D334A905E6B - d1e1c7fc1e0b28a8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PlatonSDK.PlatonApplePay.__allocating_init(action: PlatonSDK.PlatonMethodAction, result: PlatonSDK.PlatonResult, orderId: Swift.String, transId: Swift.String, transDate: Swift.String) -&gt; PlatonSDK.PlatonApplePay"
+                  moduleName = "PlatonSDK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hizashi/platon_ios_sdk/PlatonSDK/Models/Response/PlatonApplePay.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "61">
+               </Location>
+               <Location
+                  uuid = "93C4CEC5-2A32-4D01-981B-3D334A905E6B - c41fe92e04ebfbf6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PlatonSDK.PlatonApplePay.init(action: PlatonSDK.PlatonMethodAction, result: PlatonSDK.PlatonResult, orderId: Swift.String, transId: Swift.String, transDate: Swift.String) -&gt; PlatonSDK.PlatonApplePay"
+                  moduleName = "PlatonSDK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hizashi/platon_ios_sdk/PlatonSDK/Models/Response/PlatonApplePay.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "197">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "28DF0C2C-1C91-4AFE-A5E0-5CF745C84545"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PlatonSDK/Adapters/Post/PlatonApplePayAdapter.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "51"
+            endingLineNumber = "51"
+            landmarkName = "pay(payer:paymentToken:clientKey:channelId:orderId:orderDescription:amount:termsUrl3ds:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "CE44B6A2-8B30-4698-8154-C2B634DC6311"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PlatonSDK/Adapters/Post/PlatonApplePayAdapter.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "48"
+            endingLineNumber = "48"
+            landmarkName = "pay(payer:paymentToken:clientKey:channelId:orderId:orderDescription:amount:termsUrl3ds:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0B3B7B77-4E27-4CCD-8006-D7A6A15A4E9A"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PlatonSDK/Adapters/Post/PlatonApplePayAdapter.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "47"
+            endingLineNumber = "47"
+            landmarkName = "pay(payer:paymentToken:clientKey:channelId:orderId:orderDescription:amount:termsUrl3ds:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

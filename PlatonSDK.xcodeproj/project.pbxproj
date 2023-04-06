@@ -1,0 +1,915 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		57095B072695BD53000D5DC6 /* PlatonWebCardVerificationAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57095B062695BD53000D5DC6 /* PlatonWebCardVerificationAdapter.swift */; };
+		57095B092695BE1B000D5DC6 /* WebCardVerificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57095B082695BE1B000D5DC6 /* WebCardVerificationViewController.swift */; };
+		573DCCAB2691CADF00AE70C0 /* PlatonWebC2AAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 573DCCAA2691CADF00AE70C0 /* PlatonWebC2AAdapter.swift */; };
+		573DCCAF2691D6BF00AE70C0 /* WebC2AViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 573DCCAE2691D6BF00AE70C0 /* WebC2AViewController.swift */; };
+		573DCCB12691E4CA00AE70C0 /* PlatonWebC2AOneClickAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 573DCCB02691E4CA00AE70C0 /* PlatonWebC2AOneClickAdapter.swift */; };
+		573DCCB32691E83500AE70C0 /* WebC2AOneClickViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 573DCCB22691E83500AE70C0 /* WebC2AOneClickViewController.swift */; };
+		5761864D26CD3FC400775702 /* PlatonTransStateAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5761864C26CD3FC400775702 /* PlatonTransStateAdapter.swift */; };
+		5761864F26CE2FC800775702 /* TransStateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5761864E26CE2FC800775702 /* TransStateViewController.swift */; };
+		BE450FAE1FC2BF3400C2AB35 /* PlatonSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = BE450FAC1FC2BF3400C2AB35 /* PlatonSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BE450FB51FC2C00500C2AB35 /* PlatonBaseAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE450FB41FC2C00500C2AB35 /* PlatonBaseAdapter.swift */; };
+		BE450FBE1FC2C03100C2AB35 /* PlatonSaleAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE450FB81FC2C03100C2AB35 /* PlatonSaleAdapter.swift */; };
+		BE450FBF1FC2C03100C2AB35 /* PlatonScheduleAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE450FB91FC2C03100C2AB35 /* PlatonScheduleAdapter.swift */; };
+		BE450FC01FC2C03100C2AB35 /* PlatonTransactionAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE450FBA1FC2C03100C2AB35 /* PlatonTransactionAdapter.swift */; };
+		BE450FC11FC2C03100C2AB35 /* PlatonCaptureAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE450FBB1FC2C03100C2AB35 /* PlatonCaptureAdapter.swift */; };
+		BE450FC21FC2C03100C2AB35 /* PlatonRecurringAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE450FBC1FC2C03100C2AB35 /* PlatonRecurringAdapter.swift */; };
+		BE450FC31FC2C03100C2AB35 /* PlatonCreditVoidAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE450FBD1FC2C03100C2AB35 /* PlatonCreditVoidAdapter.swift */; };
+		BE450FCA1FC2C04E00C2AB35 /* PlatonWebScheduleAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE450FC51FC2C04E00C2AB35 /* PlatonWebScheduleAdapter.swift */; };
+		BE450FCB1FC2C04E00C2AB35 /* PlatonWebBaseAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE450FC61FC2C04E00C2AB35 /* PlatonWebBaseAdapter.swift */; };
+		BE450FCC1FC2C04E00C2AB35 /* PlatonWebOneClickSaleAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE450FC71FC2C04E00C2AB35 /* PlatonWebOneClickSaleAdapter.swift */; };
+		BE450FCD1FC2C04E00C2AB35 /* PlatonWebRecurringAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE450FC81FC2C04E00C2AB35 /* PlatonWebRecurringAdapter.swift */; };
+		BE450FCE1FC2C04E00C2AB35 /* PlatonWebSaleAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE450FC91FC2C04E00C2AB35 /* PlatonWebSaleAdapter.swift */; };
+		BE450FD01FC2C05F00C2AB35 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE450FCF1FC2C05F00C2AB35 /* Constants.swift */; };
+		BE450FD51FC2C07F00C2AB35 /* PlatonCredentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE450FD31FC2C07F00C2AB35 /* PlatonCredentials.swift */; };
+		BE450FD61FC2C07F00C2AB35 /* PlatonSDK.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE450FD41FC2C07F00C2AB35 /* PlatonSDK.swift */; };
+		BE450FE21FC2C0AF00C2AB35 /* PlatonParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE450FDA1FC2C0AE00C2AB35 /* PlatonParameters.swift */; };
+		BE450FE31FC2C0AF00C2AB35 /* PlatonScheduleAdditonal.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE450FDB1FC2C0AE00C2AB35 /* PlatonScheduleAdditonal.swift */; };
+		BE450FE41FC2C0AF00C2AB35 /* PlatonPayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE450FDC1FC2C0AE00C2AB35 /* PlatonPayer.swift */; };
+		BE450FE51FC2C0AF00C2AB35 /* PlatonProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE450FDD1FC2C0AE00C2AB35 /* PlatonProduct.swift */; };
+		BE450FE61FC2C0AF00C2AB35 /* PlatonOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE450FDE1FC2C0AE00C2AB35 /* PlatonOrder.swift */; };
+		BE450FE71FC2C0AF00C2AB35 /* PlatonCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE450FDF1FC2C0AE00C2AB35 /* PlatonCard.swift */; };
+		BE450FE81FC2C0AF00C2AB35 /* PlatonRecurring.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE450FE01FC2C0AE00C2AB35 /* PlatonRecurring.swift */; };
+		BE450FE91FC2C0AF00C2AB35 /* PlatonSaleAdditional.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE450FE11FC2C0AF00C2AB35 /* PlatonSaleAdditional.swift */; };
+		BE450FEF1FC2C0B800C2AB35 /* PlatonCapture.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE450FEA1FC2C0B700C2AB35 /* PlatonCapture.swift */; };
+		BE450FF01FC2C0B800C2AB35 /* PlatonSale.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE450FEB1FC2C0B700C2AB35 /* PlatonSale.swift */; };
+		BE450FF11FC2C0B800C2AB35 /* PlatonCreditVoid.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE450FEC1FC2C0B700C2AB35 /* PlatonCreditVoid.swift */; };
+		BE450FF21FC2C0B800C2AB35 /* PlatonBaseResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE450FED1FC2C0B700C2AB35 /* PlatonBaseResponseModel.swift */; };
+		BE450FF31FC2C0B800C2AB35 /* PlatonTransaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE450FEE1FC2C0B800C2AB35 /* PlatonTransaction.swift */; };
+		BE450FF71FC2C0E300C2AB35 /* PlatonError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE450FF51FC2C0E300C2AB35 /* PlatonError.swift */; };
+		BE450FF81FC2C0E300C2AB35 /* PlatonResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE450FF61FC2C0E300C2AB35 /* PlatonResponse.swift */; };
+		BE450FFE1FC2C0F800C2AB35 /* PlatonSDKUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE450FFB1FC2C0F800C2AB35 /* PlatonSDKUtils.swift */; };
+		BE450FFF1FC2C0F800C2AB35 /* PlatonBase64Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE450FFC1FC2C0F800C2AB35 /* PlatonBase64Utils.swift */; };
+		BE4510001FC2C0F800C2AB35 /* PlatonHashUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE450FFD1FC2C0F800C2AB35 /* PlatonHashUtils.swift */; };
+		BE58F8CF1FC2D6F00049E828 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE58F8CE1FC2D6F00049E828 /* AppDelegate.swift */; };
+		BE58F8D41FC2D6F00049E828 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE58F8D21FC2D6F00049E828 /* Main.storyboard */; };
+		BE58F8D61FC2D6F00049E828 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE58F8D51FC2D6F00049E828 /* Assets.xcassets */; };
+		BE58F8D91FC2D6F00049E828 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE58F8D71FC2D6F00049E828 /* LaunchScreen.storyboard */; };
+		BE58F8DF1FC2D93D0049E828 /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE58F8DE1FC2D93D0049E828 /* MainTableViewController.swift */; };
+		BE58F8EB1FC2D9820049E828 /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE58F8E31FC2D9820049E828 /* ScheduleViewController.swift */; };
+		BE58F8EC1FC2D9820049E828 /* GetTransDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE58F8E41FC2D9820049E828 /* GetTransDetailsViewController.swift */; };
+		BE58F8ED1FC2D9820049E828 /* DescheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE58F8E51FC2D9820049E828 /* DescheduleViewController.swift */; };
+		BE58F8EE1FC2D9820049E828 /* GetTransStatusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE58F8E61FC2D9820049E828 /* GetTransStatusViewController.swift */; };
+		BE58F8EF1FC2D9820049E828 /* CaptureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE58F8E71FC2D9820049E828 /* CaptureViewController.swift */; };
+		BE58F8F01FC2D9820049E828 /* SaleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE58F8E81FC2D9820049E828 /* SaleViewController.swift */; };
+		BE58F8F11FC2D9820049E828 /* CreditVoidViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE58F8E91FC2D9820049E828 /* CreditVoidViewController.swift */; };
+		BE58F8F21FC2D9820049E828 /* RecurringSaleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE58F8EA1FC2D9820049E828 /* RecurringSaleViewController.swift */; };
+		BE58F8F91FC2DA5B0049E828 /* WebOneClickSaleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE58F8F41FC2DA5A0049E828 /* WebOneClickSaleViewController.swift */; };
+		BE58F8FA1FC2DA5B0049E828 /* WebScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE58F8F51FC2DA5A0049E828 /* WebScheduleViewController.swift */; };
+		BE58F8FB1FC2DA5B0049E828 /* WebDescheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE58F8F61FC2DA5A0049E828 /* WebDescheduleViewController.swift */; };
+		BE58F8FC1FC2DA5B0049E828 /* WebRecurringSaleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE58F8F71FC2DA5B0049E828 /* WebRecurringSaleViewController.swift */; };
+		BE58F8FD1FC2DA5B0049E828 /* WebSaleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE58F8F81FC2DA5B0049E828 /* WebSaleViewController.swift */; };
+		BE58F9061FC2DAC70049E828 /* ProductStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE58F9001FC2DAC60049E828 /* ProductStackView.swift */; };
+		BE58F9071FC2DAC70049E828 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE58F9011FC2DAC60049E828 /* WebViewController.swift */; };
+		BE58F9081FC2DAC70049E828 /* LoadingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE58F9021FC2DAC70049E828 /* LoadingButton.swift */; };
+		BE58F9091FC2DAC70049E828 /* AutoscrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE58F9031FC2DAC70049E828 /* AutoscrollView.swift */; };
+		BE58F90A1FC2DAC70049E828 /* CustomSegmentControll.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE58F9041FC2DAC70049E828 /* CustomSegmentControll.swift */; };
+		BE58F90B1FC2DAC70049E828 /* SwitchStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE58F9051FC2DAC70049E828 /* SwitchStackView.swift */; };
+		BE58F9101FC2DB180049E828 /* Post.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE58F90F1FC2DB180049E828 /* Post.storyboard */; };
+		BE58F9121FC2DB1F0049E828 /* Web.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE58F9111FC2DB1F0049E828 /* Web.storyboard */; };
+		BEB2EB7D1FC2E57100C93554 /* PlatonSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE450FA91FC2BF3400C2AB35 /* PlatonSDK.framework */; };
+		BEB2EB7E1FC2E57100C93554 /* PlatonSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BE450FA91FC2BF3400C2AB35 /* PlatonSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C6748B092443485C00340058 /* ApplePayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6748B082443485C00340058 /* ApplePayViewController.swift */; };
+		C6BE1907245174A9000F7C4E /* PlatonApplePay.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6BE1906245174A8000F7C4E /* PlatonApplePay.swift */; };
+		C6E4284B244DE8F900C4F84E /* PlatonApplePayAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6E4284A244DE8F900C4F84E /* PlatonApplePayAdapter.swift */; };
+		DB0FB7772212099F008251A7 /* WebTokenSaleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0FB7762212099F008251A7 /* WebTokenSaleViewController.swift */; };
+		DB0FB779221211D8008251A7 /* PlatonWebTokenSaleAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0FB778221211D8008251A7 /* PlatonWebTokenSaleAdapter.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BEB2EB7F1FC2E57100C93554 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BE450FA01FC2BF3400C2AB35 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BE450FA81FC2BF3400C2AB35;
+			remoteInfo = PlatonSDK;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BEB2EB7C1FC2E41C00C93554 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				BEB2EB7E1FC2E57100C93554 /* PlatonSDK.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		57095B062695BD53000D5DC6 /* PlatonWebCardVerificationAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlatonWebCardVerificationAdapter.swift; sourceTree = "<group>"; };
+		57095B082695BE1B000D5DC6 /* WebCardVerificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebCardVerificationViewController.swift; sourceTree = "<group>"; };
+		573DCCAA2691CADF00AE70C0 /* PlatonWebC2AAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlatonWebC2AAdapter.swift; sourceTree = "<group>"; };
+		573DCCAE2691D6BF00AE70C0 /* WebC2AViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebC2AViewController.swift; sourceTree = "<group>"; };
+		573DCCB02691E4CA00AE70C0 /* PlatonWebC2AOneClickAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlatonWebC2AOneClickAdapter.swift; sourceTree = "<group>"; };
+		573DCCB22691E83500AE70C0 /* WebC2AOneClickViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebC2AOneClickViewController.swift; sourceTree = "<group>"; };
+		5761864C26CD3FC400775702 /* PlatonTransStateAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlatonTransStateAdapter.swift; sourceTree = "<group>"; };
+		5761864E26CE2FC800775702 /* TransStateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransStateViewController.swift; sourceTree = "<group>"; };
+		BE450FA91FC2BF3400C2AB35 /* PlatonSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PlatonSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE450FAC1FC2BF3400C2AB35 /* PlatonSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlatonSDK.h; sourceTree = "<group>"; };
+		BE450FAD1FC2BF3400C2AB35 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE450FB41FC2C00500C2AB35 /* PlatonBaseAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlatonBaseAdapter.swift; sourceTree = "<group>"; };
+		BE450FB81FC2C03100C2AB35 /* PlatonSaleAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlatonSaleAdapter.swift; sourceTree = "<group>"; };
+		BE450FB91FC2C03100C2AB35 /* PlatonScheduleAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlatonScheduleAdapter.swift; sourceTree = "<group>"; };
+		BE450FBA1FC2C03100C2AB35 /* PlatonTransactionAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlatonTransactionAdapter.swift; sourceTree = "<group>"; };
+		BE450FBB1FC2C03100C2AB35 /* PlatonCaptureAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlatonCaptureAdapter.swift; sourceTree = "<group>"; };
+		BE450FBC1FC2C03100C2AB35 /* PlatonRecurringAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlatonRecurringAdapter.swift; sourceTree = "<group>"; };
+		BE450FBD1FC2C03100C2AB35 /* PlatonCreditVoidAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlatonCreditVoidAdapter.swift; sourceTree = "<group>"; };
+		BE450FC51FC2C04E00C2AB35 /* PlatonWebScheduleAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlatonWebScheduleAdapter.swift; sourceTree = "<group>"; };
+		BE450FC61FC2C04E00C2AB35 /* PlatonWebBaseAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlatonWebBaseAdapter.swift; sourceTree = "<group>"; };
+		BE450FC71FC2C04E00C2AB35 /* PlatonWebOneClickSaleAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlatonWebOneClickSaleAdapter.swift; sourceTree = "<group>"; };
+		BE450FC81FC2C04E00C2AB35 /* PlatonWebRecurringAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlatonWebRecurringAdapter.swift; sourceTree = "<group>"; };
+		BE450FC91FC2C04E00C2AB35 /* PlatonWebSaleAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlatonWebSaleAdapter.swift; sourceTree = "<group>"; };
+		BE450FCF1FC2C05F00C2AB35 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		BE450FD31FC2C07F00C2AB35 /* PlatonCredentials.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlatonCredentials.swift; sourceTree = "<group>"; };
+		BE450FD41FC2C07F00C2AB35 /* PlatonSDK.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlatonSDK.swift; sourceTree = "<group>"; };
+		BE450FDA1FC2C0AE00C2AB35 /* PlatonParameters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlatonParameters.swift; sourceTree = "<group>"; };
+		BE450FDB1FC2C0AE00C2AB35 /* PlatonScheduleAdditonal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlatonScheduleAdditonal.swift; sourceTree = "<group>"; };
+		BE450FDC1FC2C0AE00C2AB35 /* PlatonPayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlatonPayer.swift; sourceTree = "<group>"; };
+		BE450FDD1FC2C0AE00C2AB35 /* PlatonProduct.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlatonProduct.swift; sourceTree = "<group>"; };
+		BE450FDE1FC2C0AE00C2AB35 /* PlatonOrder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlatonOrder.swift; sourceTree = "<group>"; };
+		BE450FDF1FC2C0AE00C2AB35 /* PlatonCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlatonCard.swift; sourceTree = "<group>"; };
+		BE450FE01FC2C0AE00C2AB35 /* PlatonRecurring.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlatonRecurring.swift; sourceTree = "<group>"; };
+		BE450FE11FC2C0AF00C2AB35 /* PlatonSaleAdditional.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlatonSaleAdditional.swift; sourceTree = "<group>"; };
+		BE450FEA1FC2C0B700C2AB35 /* PlatonCapture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlatonCapture.swift; sourceTree = "<group>"; };
+		BE450FEB1FC2C0B700C2AB35 /* PlatonSale.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlatonSale.swift; sourceTree = "<group>"; };
+		BE450FEC1FC2C0B700C2AB35 /* PlatonCreditVoid.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlatonCreditVoid.swift; sourceTree = "<group>"; };
+		BE450FED1FC2C0B700C2AB35 /* PlatonBaseResponseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlatonBaseResponseModel.swift; sourceTree = "<group>"; };
+		BE450FEE1FC2C0B800C2AB35 /* PlatonTransaction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlatonTransaction.swift; sourceTree = "<group>"; };
+		BE450FF51FC2C0E300C2AB35 /* PlatonError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlatonError.swift; sourceTree = "<group>"; };
+		BE450FF61FC2C0E300C2AB35 /* PlatonResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlatonResponse.swift; sourceTree = "<group>"; };
+		BE450FFB1FC2C0F800C2AB35 /* PlatonSDKUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlatonSDKUtils.swift; sourceTree = "<group>"; };
+		BE450FFC1FC2C0F800C2AB35 /* PlatonBase64Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlatonBase64Utils.swift; sourceTree = "<group>"; };
+		BE450FFD1FC2C0F800C2AB35 /* PlatonHashUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlatonHashUtils.swift; sourceTree = "<group>"; };
+		BE58F8CC1FC2D6F00049E828 /* Sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE58F8CE1FC2D6F00049E828 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BE58F8D31FC2D6F00049E828 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BE58F8D51FC2D6F00049E828 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BE58F8D81FC2D6F00049E828 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BE58F8DA1FC2D6F00049E828 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE58F8DE1FC2D93D0049E828 /* MainTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
+		BE58F8E31FC2D9820049E828 /* ScheduleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleViewController.swift; sourceTree = "<group>"; };
+		BE58F8E41FC2D9820049E828 /* GetTransDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetTransDetailsViewController.swift; sourceTree = "<group>"; };
+		BE58F8E51FC2D9820049E828 /* DescheduleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DescheduleViewController.swift; sourceTree = "<group>"; };
+		BE58F8E61FC2D9820049E828 /* GetTransStatusViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetTransStatusViewController.swift; sourceTree = "<group>"; };
+		BE58F8E71FC2D9820049E828 /* CaptureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaptureViewController.swift; sourceTree = "<group>"; };
+		BE58F8E81FC2D9820049E828 /* SaleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SaleViewController.swift; sourceTree = "<group>"; };
+		BE58F8E91FC2D9820049E828 /* CreditVoidViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreditVoidViewController.swift; sourceTree = "<group>"; };
+		BE58F8EA1FC2D9820049E828 /* RecurringSaleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecurringSaleViewController.swift; sourceTree = "<group>"; };
+		BE58F8F41FC2DA5A0049E828 /* WebOneClickSaleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebOneClickSaleViewController.swift; sourceTree = "<group>"; };
+		BE58F8F51FC2DA5A0049E828 /* WebScheduleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebScheduleViewController.swift; sourceTree = "<group>"; };
+		BE58F8F61FC2DA5A0049E828 /* WebDescheduleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebDescheduleViewController.swift; sourceTree = "<group>"; };
+		BE58F8F71FC2DA5B0049E828 /* WebRecurringSaleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebRecurringSaleViewController.swift; sourceTree = "<group>"; };
+		BE58F8F81FC2DA5B0049E828 /* WebSaleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebSaleViewController.swift; sourceTree = "<group>"; };
+		BE58F9001FC2DAC60049E828 /* ProductStackView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductStackView.swift; sourceTree = "<group>"; };
+		BE58F9011FC2DAC60049E828 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		BE58F9021FC2DAC70049E828 /* LoadingButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingButton.swift; sourceTree = "<group>"; };
+		BE58F9031FC2DAC70049E828 /* AutoscrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoscrollView.swift; sourceTree = "<group>"; };
+		BE58F9041FC2DAC70049E828 /* CustomSegmentControll.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomSegmentControll.swift; sourceTree = "<group>"; };
+		BE58F9051FC2DAC70049E828 /* SwitchStackView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwitchStackView.swift; sourceTree = "<group>"; };
+		BE58F90F1FC2DB180049E828 /* Post.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Post.storyboard; sourceTree = "<group>"; };
+		BE58F9111FC2DB1F0049E828 /* Web.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Web.storyboard; sourceTree = "<group>"; };
+		BEB2EB821FC2E67C00C93554 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6748B082443485C00340058 /* ApplePayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplePayViewController.swift; sourceTree = "<group>"; };
+		C6748B0A244350AE00340058 /* Sample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Sample.entitlements; sourceTree = "<group>"; };
+		C6BE1906245174A8000F7C4E /* PlatonApplePay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlatonApplePay.swift; sourceTree = "<group>"; };
+		C6E4284A244DE8F900C4F84E /* PlatonApplePayAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlatonApplePayAdapter.swift; sourceTree = "<group>"; };
+		DB0FB7762212099F008251A7 /* WebTokenSaleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebTokenSaleViewController.swift; sourceTree = "<group>"; };
+		DB0FB778221211D8008251A7 /* PlatonWebTokenSaleAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlatonWebTokenSaleAdapter.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BE450FA51FC2BF3400C2AB35 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE58F8C91FC2D6F00049E828 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEB2EB7D1FC2E57100C93554 /* PlatonSDK.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AC2F1B4C44B1B17473B6C79E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BEB2EB821FC2E67C00C93554 /* Alamofire.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BE450F9F1FC2BF3400C2AB35 = {
+			isa = PBXGroup;
+			children = (
+				BE450FAB1FC2BF3400C2AB35 /* PlatonSDK */,
+				BE58F8CD1FC2D6F00049E828 /* Sample */,
+				BE450FAA1FC2BF3400C2AB35 /* Products */,
+				AC2F1B4C44B1B17473B6C79E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BE450FAA1FC2BF3400C2AB35 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BE450FA91FC2BF3400C2AB35 /* PlatonSDK.framework */,
+				BE58F8CC1FC2D6F00049E828 /* Sample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BE450FAB1FC2BF3400C2AB35 /* PlatonSDK */ = {
+			isa = PBXGroup;
+			children = (
+				BE450FAC1FC2BF3400C2AB35 /* PlatonSDK.h */,
+				BE450FD71FC2C08B00C2AB35 /* Models */,
+				BE450FB61FC2C01400C2AB35 /* Adapters */,
+				BE450FD11FC2C06700C2AB35 /* Constants */,
+				BE450FD21FC2C07600C2AB35 /* Core */,
+				BE450FF41FC2C0D500C2AB35 /* Response */,
+				BE450FFA1FC2C0F200C2AB35 /* Utils */,
+				BE450FAD1FC2BF3400C2AB35 /* Info.plist */,
+			);
+			path = PlatonSDK;
+			sourceTree = "<group>";
+		};
+		BE450FB61FC2C01400C2AB35 /* Adapters */ = {
+			isa = PBXGroup;
+			children = (
+				BE450FB41FC2C00500C2AB35 /* PlatonBaseAdapter.swift */,
+				BE450FB71FC2C02500C2AB35 /* Post */,
+				BE450FC41FC2C04100C2AB35 /* Web */,
+			);
+			path = Adapters;
+			sourceTree = "<group>";
+		};
+		BE450FB71FC2C02500C2AB35 /* Post */ = {
+			isa = PBXGroup;
+			children = (
+				BE450FBB1FC2C03100C2AB35 /* PlatonCaptureAdapter.swift */,
+				BE450FBD1FC2C03100C2AB35 /* PlatonCreditVoidAdapter.swift */,
+				BE450FBC1FC2C03100C2AB35 /* PlatonRecurringAdapter.swift */,
+				BE450FB81FC2C03100C2AB35 /* PlatonSaleAdapter.swift */,
+				BE450FB91FC2C03100C2AB35 /* PlatonScheduleAdapter.swift */,
+				BE450FBA1FC2C03100C2AB35 /* PlatonTransactionAdapter.swift */,
+				C6E4284A244DE8F900C4F84E /* PlatonApplePayAdapter.swift */,
+				5761864C26CD3FC400775702 /* PlatonTransStateAdapter.swift */,
+			);
+			path = Post;
+			sourceTree = "<group>";
+		};
+		BE450FC41FC2C04100C2AB35 /* Web */ = {
+			isa = PBXGroup;
+			children = (
+				BE450FC61FC2C04E00C2AB35 /* PlatonWebBaseAdapter.swift */,
+				BE450FC71FC2C04E00C2AB35 /* PlatonWebOneClickSaleAdapter.swift */,
+				BE450FC81FC2C04E00C2AB35 /* PlatonWebRecurringAdapter.swift */,
+				BE450FC91FC2C04E00C2AB35 /* PlatonWebSaleAdapter.swift */,
+				57095B062695BD53000D5DC6 /* PlatonWebCardVerificationAdapter.swift */,
+				573DCCAA2691CADF00AE70C0 /* PlatonWebC2AAdapter.swift */,
+				573DCCB02691E4CA00AE70C0 /* PlatonWebC2AOneClickAdapter.swift */,
+				BE450FC51FC2C04E00C2AB35 /* PlatonWebScheduleAdapter.swift */,
+				DB0FB778221211D8008251A7 /* PlatonWebTokenSaleAdapter.swift */,
+			);
+			path = Web;
+			sourceTree = "<group>";
+		};
+		BE450FD11FC2C06700C2AB35 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				BE450FCF1FC2C05F00C2AB35 /* Constants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		BE450FD21FC2C07600C2AB35 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				BE450FD31FC2C07F00C2AB35 /* PlatonCredentials.swift */,
+				BE450FD41FC2C07F00C2AB35 /* PlatonSDK.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		BE450FD71FC2C08B00C2AB35 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BE450FD81FC2C09000C2AB35 /* Request */,
+				BE450FD91FC2C0A000C2AB35 /* Response */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		BE450FD81FC2C09000C2AB35 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				BE450FDF1FC2C0AE00C2AB35 /* PlatonCard.swift */,
+				BE450FDE1FC2C0AE00C2AB35 /* PlatonOrder.swift */,
+				BE450FDA1FC2C0AE00C2AB35 /* PlatonParameters.swift */,
+				BE450FDC1FC2C0AE00C2AB35 /* PlatonPayer.swift */,
+				BE450FDD1FC2C0AE00C2AB35 /* PlatonProduct.swift */,
+				BE450FE01FC2C0AE00C2AB35 /* PlatonRecurring.swift */,
+				BE450FE11FC2C0AF00C2AB35 /* PlatonSaleAdditional.swift */,
+				BE450FDB1FC2C0AE00C2AB35 /* PlatonScheduleAdditonal.swift */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		BE450FD91FC2C0A000C2AB35 /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				BE450FED1FC2C0B700C2AB35 /* PlatonBaseResponseModel.swift */,
+				BE450FEA1FC2C0B700C2AB35 /* PlatonCapture.swift */,
+				BE450FEC1FC2C0B700C2AB35 /* PlatonCreditVoid.swift */,
+				BE450FEB1FC2C0B700C2AB35 /* PlatonSale.swift */,
+				BE450FEE1FC2C0B800C2AB35 /* PlatonTransaction.swift */,
+				C6BE1906245174A8000F7C4E /* PlatonApplePay.swift */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
+		BE450FF41FC2C0D500C2AB35 /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				BE450FF51FC2C0E300C2AB35 /* PlatonError.swift */,
+				BE450FF61FC2C0E300C2AB35 /* PlatonResponse.swift */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
+		BE450FFA1FC2C0F200C2AB35 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				BE450FFC1FC2C0F800C2AB35 /* PlatonBase64Utils.swift */,
+				BE450FFD1FC2C0F800C2AB35 /* PlatonHashUtils.swift */,
+				BE450FFB1FC2C0F800C2AB35 /* PlatonSDKUtils.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		BE58F8CD1FC2D6F00049E828 /* Sample */ = {
+			isa = PBXGroup;
+			children = (
+				C6748B0A244350AE00340058 /* Sample.entitlements */,
+				BE58F8E01FC2D94A0049E828 /* ViewControllers */,
+				BE58F8FF1FC2DA910049E828 /* Views */,
+				BE58F8CE1FC2D6F00049E828 /* AppDelegate.swift */,
+				BE58F90E1FC2DAFD0049E828 /* UserInterface */,
+				BE58F8D51FC2D6F00049E828 /* Assets.xcassets */,
+				BE58F8D71FC2D6F00049E828 /* LaunchScreen.storyboard */,
+				BE58F8DA1FC2D6F00049E828 /* Info.plist */,
+			);
+			path = Sample;
+			sourceTree = "<group>";
+		};
+		BE58F8E01FC2D94A0049E828 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				BE58F8DE1FC2D93D0049E828 /* MainTableViewController.swift */,
+				BE58F8E11FC2D96B0049E828 /* Post */,
+				BE58F8E21FC2D9760049E828 /* Web */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		BE58F8E11FC2D96B0049E828 /* Post */ = {
+			isa = PBXGroup;
+			children = (
+				BE58F8E81FC2D9820049E828 /* SaleViewController.swift */,
+				BE58F8E71FC2D9820049E828 /* CaptureViewController.swift */,
+				BE58F8E91FC2D9820049E828 /* CreditVoidViewController.swift */,
+				BE58F8E61FC2D9820049E828 /* GetTransStatusViewController.swift */,
+				BE58F8E41FC2D9820049E828 /* GetTransDetailsViewController.swift */,
+				BE58F8EA1FC2D9820049E828 /* RecurringSaleViewController.swift */,
+				BE58F8E31FC2D9820049E828 /* ScheduleViewController.swift */,
+				BE58F8E51FC2D9820049E828 /* DescheduleViewController.swift */,
+				C6748B082443485C00340058 /* ApplePayViewController.swift */,
+				5761864E26CE2FC800775702 /* TransStateViewController.swift */,
+			);
+			path = Post;
+			sourceTree = "<group>";
+		};
+		BE58F8E21FC2D9760049E828 /* Web */ = {
+			isa = PBXGroup;
+			children = (
+				BE58F8F81FC2DA5B0049E828 /* WebSaleViewController.swift */,
+				57095B082695BE1B000D5DC6 /* WebCardVerificationViewController.swift */,
+				BE58F8F41FC2DA5A0049E828 /* WebOneClickSaleViewController.swift */,
+				573DCCAE2691D6BF00AE70C0 /* WebC2AViewController.swift */,
+				573DCCB22691E83500AE70C0 /* WebC2AOneClickViewController.swift */,
+				BE58F8F71FC2DA5B0049E828 /* WebRecurringSaleViewController.swift */,
+				BE58F8F51FC2DA5A0049E828 /* WebScheduleViewController.swift */,
+				BE58F8F61FC2DA5A0049E828 /* WebDescheduleViewController.swift */,
+				DB0FB7762212099F008251A7 /* WebTokenSaleViewController.swift */,
+			);
+			path = Web;
+			sourceTree = "<group>";
+		};
+		BE58F8FF1FC2DA910049E828 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BE58F9031FC2DAC70049E828 /* AutoscrollView.swift */,
+				BE58F9041FC2DAC70049E828 /* CustomSegmentControll.swift */,
+				BE58F9001FC2DAC60049E828 /* ProductStackView.swift */,
+				BE58F9051FC2DAC70049E828 /* SwitchStackView.swift */,
+				BE58F9021FC2DAC70049E828 /* LoadingButton.swift */,
+				BE58F9011FC2DAC60049E828 /* WebViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BE58F90E1FC2DAFD0049E828 /* UserInterface */ = {
+			isa = PBXGroup;
+			children = (
+				BE58F8D21FC2D6F00049E828 /* Main.storyboard */,
+				BE58F90F1FC2DB180049E828 /* Post.storyboard */,
+				BE58F9111FC2DB1F0049E828 /* Web.storyboard */,
+			);
+			path = UserInterface;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		BE450FA61FC2BF3400C2AB35 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE450FAE1FC2BF3400C2AB35 /* PlatonSDK.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		BE450FA81FC2BF3400C2AB35 /* PlatonSDK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE450FB11FC2BF3400C2AB35 /* Build configuration list for PBXNativeTarget "PlatonSDK" */;
+			buildPhases = (
+				BE450FA41FC2BF3400C2AB35 /* Sources */,
+				BE450FA51FC2BF3400C2AB35 /* Frameworks */,
+				BE450FA61FC2BF3400C2AB35 /* Headers */,
+				BE450FA71FC2BF3400C2AB35 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PlatonSDK;
+			productName = PlatonSDK;
+			productReference = BE450FA91FC2BF3400C2AB35 /* PlatonSDK.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		BE58F8CB1FC2D6F00049E828 /* Sample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE58F8DD1FC2D6F00049E828 /* Build configuration list for PBXNativeTarget "Sample" */;
+			buildPhases = (
+				BE58F8C81FC2D6F00049E828 /* Sources */,
+				BE58F8C91FC2D6F00049E828 /* Frameworks */,
+				BE58F8CA1FC2D6F00049E828 /* Resources */,
+				BEB2EB7C1FC2E41C00C93554 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BEB2EB801FC2E57100C93554 /* PBXTargetDependency */,
+			);
+			name = Sample;
+			productName = Sample;
+			productReference = BE58F8CC1FC2D6F00049E828 /* Sample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BE450FA01FC2BF3400C2AB35 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0910;
+				LastUpgradeCheck = 1250;
+				ORGANIZATIONNAME = Devlight;
+				TargetAttributes = {
+					BE450FA81FC2BF3400C2AB35 = {
+						CreatedOnToolsVersion = 9.1;
+						LastSwiftMigration = 0910;
+						ProvisioningStyle = Automatic;
+					};
+					BE58F8CB1FC2D6F00049E828 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = BE450FA31FC2BF3400C2AB35 /* Build configuration list for PBXProject "PlatonSDK" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BE450F9F1FC2BF3400C2AB35;
+			productRefGroup = BE450FAA1FC2BF3400C2AB35 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BE450FA81FC2BF3400C2AB35 /* PlatonSDK */,
+				BE58F8CB1FC2D6F00049E828 /* Sample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BE450FA71FC2BF3400C2AB35 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE58F8CA1FC2D6F00049E828 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE58F9101FC2DB180049E828 /* Post.storyboard in Resources */,
+				BE58F8D91FC2D6F00049E828 /* LaunchScreen.storyboard in Resources */,
+				BE58F9121FC2DB1F0049E828 /* Web.storyboard in Resources */,
+				BE58F8D61FC2D6F00049E828 /* Assets.xcassets in Resources */,
+				BE58F8D41FC2D6F00049E828 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BE450FA41FC2BF3400C2AB35 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE450FEF1FC2C0B800C2AB35 /* PlatonCapture.swift in Sources */,
+				573DCCAB2691CADF00AE70C0 /* PlatonWebC2AAdapter.swift in Sources */,
+				BE450FBF1FC2C03100C2AB35 /* PlatonScheduleAdapter.swift in Sources */,
+				BE450FBE1FC2C03100C2AB35 /* PlatonSaleAdapter.swift in Sources */,
+				BE450FCB1FC2C04E00C2AB35 /* PlatonWebBaseAdapter.swift in Sources */,
+				BE450FE31FC2C0AF00C2AB35 /* PlatonScheduleAdditonal.swift in Sources */,
+				BE450FE21FC2C0AF00C2AB35 /* PlatonParameters.swift in Sources */,
+				BE450FC11FC2C03100C2AB35 /* PlatonCaptureAdapter.swift in Sources */,
+				BE450FCD1FC2C04E00C2AB35 /* PlatonWebRecurringAdapter.swift in Sources */,
+				BE450FE81FC2C0AF00C2AB35 /* PlatonRecurring.swift in Sources */,
+				BE450FE71FC2C0AF00C2AB35 /* PlatonCard.swift in Sources */,
+				BE450FF71FC2C0E300C2AB35 /* PlatonError.swift in Sources */,
+				57095B072695BD53000D5DC6 /* PlatonWebCardVerificationAdapter.swift in Sources */,
+				BE450FF31FC2C0B800C2AB35 /* PlatonTransaction.swift in Sources */,
+				BE450FE41FC2C0AF00C2AB35 /* PlatonPayer.swift in Sources */,
+				BE450FE91FC2C0AF00C2AB35 /* PlatonSaleAdditional.swift in Sources */,
+				BE450FCA1FC2C04E00C2AB35 /* PlatonWebScheduleAdapter.swift in Sources */,
+				DB0FB779221211D8008251A7 /* PlatonWebTokenSaleAdapter.swift in Sources */,
+				BE450FFE1FC2C0F800C2AB35 /* PlatonSDKUtils.swift in Sources */,
+				BE450FC31FC2C03100C2AB35 /* PlatonCreditVoidAdapter.swift in Sources */,
+				BE450FD61FC2C07F00C2AB35 /* PlatonSDK.swift in Sources */,
+				BE450FD01FC2C05F00C2AB35 /* Constants.swift in Sources */,
+				BE450FF21FC2C0B800C2AB35 /* PlatonBaseResponseModel.swift in Sources */,
+				BE450FCE1FC2C04E00C2AB35 /* PlatonWebSaleAdapter.swift in Sources */,
+				573DCCB12691E4CA00AE70C0 /* PlatonWebC2AOneClickAdapter.swift in Sources */,
+				C6BE1907245174A9000F7C4E /* PlatonApplePay.swift in Sources */,
+				BE450FC21FC2C03100C2AB35 /* PlatonRecurringAdapter.swift in Sources */,
+				BE450FFF1FC2C0F800C2AB35 /* PlatonBase64Utils.swift in Sources */,
+				BE450FF11FC2C0B800C2AB35 /* PlatonCreditVoid.swift in Sources */,
+				BE450FF01FC2C0B800C2AB35 /* PlatonSale.swift in Sources */,
+				BE450FE61FC2C0AF00C2AB35 /* PlatonOrder.swift in Sources */,
+				C6E4284B244DE8F900C4F84E /* PlatonApplePayAdapter.swift in Sources */,
+				BE450FD51FC2C07F00C2AB35 /* PlatonCredentials.swift in Sources */,
+				BE4510001FC2C0F800C2AB35 /* PlatonHashUtils.swift in Sources */,
+				BE450FCC1FC2C04E00C2AB35 /* PlatonWebOneClickSaleAdapter.swift in Sources */,
+				BE450FF81FC2C0E300C2AB35 /* PlatonResponse.swift in Sources */,
+				BE450FC01FC2C03100C2AB35 /* PlatonTransactionAdapter.swift in Sources */,
+				BE450FB51FC2C00500C2AB35 /* PlatonBaseAdapter.swift in Sources */,
+				5761864D26CD3FC400775702 /* PlatonTransStateAdapter.swift in Sources */,
+				BE450FE51FC2C0AF00C2AB35 /* PlatonProduct.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE58F8C81FC2D6F00049E828 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE58F9081FC2DAC70049E828 /* LoadingButton.swift in Sources */,
+				BE58F8FC1FC2DA5B0049E828 /* WebRecurringSaleViewController.swift in Sources */,
+				BE58F90B1FC2DAC70049E828 /* SwitchStackView.swift in Sources */,
+				BE58F8FA1FC2DA5B0049E828 /* WebScheduleViewController.swift in Sources */,
+				BE58F8EB1FC2D9820049E828 /* ScheduleViewController.swift in Sources */,
+				BE58F9061FC2DAC70049E828 /* ProductStackView.swift in Sources */,
+				BE58F90A1FC2DAC70049E828 /* CustomSegmentControll.swift in Sources */,
+				BE58F8DF1FC2D93D0049E828 /* MainTableViewController.swift in Sources */,
+				573DCCAF2691D6BF00AE70C0 /* WebC2AViewController.swift in Sources */,
+				BE58F8EF1FC2D9820049E828 /* CaptureViewController.swift in Sources */,
+				BE58F8EE1FC2D9820049E828 /* GetTransStatusViewController.swift in Sources */,
+				BE58F8ED1FC2D9820049E828 /* DescheduleViewController.swift in Sources */,
+				BE58F9091FC2DAC70049E828 /* AutoscrollView.swift in Sources */,
+				BE58F8CF1FC2D6F00049E828 /* AppDelegate.swift in Sources */,
+				BE58F8FB1FC2DA5B0049E828 /* WebDescheduleViewController.swift in Sources */,
+				BE58F8FD1FC2DA5B0049E828 /* WebSaleViewController.swift in Sources */,
+				BE58F8EC1FC2D9820049E828 /* GetTransDetailsViewController.swift in Sources */,
+				BE58F9071FC2DAC70049E828 /* WebViewController.swift in Sources */,
+				5761864F26CE2FC800775702 /* TransStateViewController.swift in Sources */,
+				C6748B092443485C00340058 /* ApplePayViewController.swift in Sources */,
+				573DCCB32691E83500AE70C0 /* WebC2AOneClickViewController.swift in Sources */,
+				BE58F8F21FC2D9820049E828 /* RecurringSaleViewController.swift in Sources */,
+				DB0FB7772212099F008251A7 /* WebTokenSaleViewController.swift in Sources */,
+				BE58F8F91FC2DA5B0049E828 /* WebOneClickSaleViewController.swift in Sources */,
+				BE58F8F01FC2D9820049E828 /* SaleViewController.swift in Sources */,
+				57095B092695BE1B000D5DC6 /* WebCardVerificationViewController.swift in Sources */,
+				BE58F8F11FC2D9820049E828 /* CreditVoidViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BEB2EB801FC2E57100C93554 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BE450FA81FC2BF3400C2AB35 /* PlatonSDK */;
+			targetProxy = BEB2EB7F1FC2E57100C93554 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BE58F8D21FC2D6F00049E828 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BE58F8D31FC2D6F00049E828 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BE58F8D71FC2D6F00049E828 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BE58F8D81FC2D6F00049E828 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BE450FAF1FC2BF3400C2AB35 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		BE450FB01FC2BF3400C2AB35 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		BE450FB21FC2BF3400C2AB35 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = FJTUE7ZT4K;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = PlatonSDK/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.platon;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BE450FB31FC2BF3400C2AB35 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = FJTUE7ZT4K;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = PlatonSDK/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.platon;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BE58F8DB1FC2D6F00049E828 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Sample/Sample.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FJTUE7ZT4K;
+				INFOPLIST_FILE = Sample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.platon.Sample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BE58F8DC1FC2D6F00049E828 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Sample/Sample.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FJTUE7ZT4K;
+				INFOPLIST_FILE = Sample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.platon.Sample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BE450FA31FC2BF3400C2AB35 /* Build configuration list for PBXProject "PlatonSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE450FAF1FC2BF3400C2AB35 /* Debug */,
+				BE450FB01FC2BF3400C2AB35 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BE450FB11FC2BF3400C2AB35 /* Build configuration list for PBXNativeTarget "PlatonSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE450FB21FC2BF3400C2AB35 /* Debug */,
+				BE450FB31FC2BF3400C2AB35 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BE58F8DD1FC2D6F00049E828 /* Build configuration list for PBXNativeTarget "Sample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE58F8DB1FC2D6F00049E828 /* Debug */,
+				BE58F8DC1FC2D6F00049E828 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BE450FA01FC2BF3400C2AB35 /* Project object */;
+}
