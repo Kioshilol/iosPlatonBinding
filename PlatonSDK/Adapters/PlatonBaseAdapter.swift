@@ -13,7 +13,6 @@ public class PlatonCalbackWrapper: NSObject {
         self.callback = callback
         super.init()
     }
-    
 }
 
 /// Base Post Payment API adaper

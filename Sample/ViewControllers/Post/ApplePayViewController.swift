@@ -67,7 +67,8 @@ class ApplePayViewController: UIViewController {
                 return contact}()
         let address = contact.postalAddress ?? CNPostalAddress()
         let name = contact.name ?? PersonNameComponents()
-        guard let tokenData = try? JSONEncoder().encode(payment.token),
+  
+        guard let tokenData = try? JSONEncoder().encode(payment.token.paymentData),
             let token = String(data: tokenData, encoding: .utf8) else {
             failure(nil)
             return
@@ -85,28 +86,53 @@ class ApplePayViewController: UIViewController {
                                         email: contact.emailAddress ?? "",
                                         phone: contact.phoneNumber?.stringValue ?? "",
                                         ipAddress: ipAddress)
-        PlatonPostPayment.applePay.pay(payer: payer,
-                                       paymentToken: token,
-                                       clientKey: clientKey,
-                                       channelId: nil,
-                                       orderId: tfOrderId.text ?? "",
-                                       orderDescription: tfOrderDescription.text ?? "",
-                                       amount: Float(tfPartialAmount.text ?? "") ?? 0,
-                                       termsUrl3ds: termsUrl3ds)
-//        { [unowned self] (result) in
-//            switch result {
-//                case .failure(let error):
-//                    self.lbResponse.text = "\(error)"
-//                    failure(error)
-//                case .secure3d(let sale3ds):
-//                    self.confirm3ds(sale3ds)
-//                    self.lbResponse.text = "\(result.responseObject!)"
-//                    success()
-//                default:
-//                    self.lbResponse.text = "\(result.responseObject!)"
-//                    success()
-//            }
+        PlatonPostPayment.applePay.pay(
+            payer: payer,
+            paymentToken: token,
+            clientKey: clientKey,
+            channelId: "",
+            orderId: tfOrderId.text ?? "",
+            orderDescription: tfOrderDescription.text ?? "",
+            amount: Float(tfPartialAmount.text ?? "") ?? 0,
+            termsUrl3ds: termsUrl3ds,
+            completion: PlatonCalbackWrapper(callback: { result in
+                let d = result as! PlatonApplePayResponseWrapper
+                
+                switch d.responseEnum {
+                case .failure:
+                    let error = d.platonBaseProtocol as! PlatonError
+                    self.lbResponse.text = "\(error.message)"
+                                failure(error)
+                            case .secure3d:
+                    let sale3ds = d.platonBaseProtocol as! PlatonApplePay3DS
+                    self.confirm3ds(sale3ds)
+                    self.lbResponse.text = "\(d.platonBaseProtocol)"
+                                success()
+                            default:
+                                self.lbResponse.text = "\(d.platonBaseProtocol)"
+                                success()
+                        }
+                
+                self.setupApplePay()
+            }))
+        
+        
+//        completion: PlatonCalbackWrapper(callback: { [unowned self] result in
+//        guard let r = try result as? PlatonApplePayResponseWrapper else { return }
+//        switch r {
+//            case .failure(let error):
+//                self.lbResponse.text = "\(error)"
+//                failure(error)
+//            case .secure3d(let sale3ds):
+//                self.confirm3ds(sale3ds)
+//                self.lbResponse.text = "\(result.responseObject!)"
+//                success()
+//            default:
+//                self.lbResponse.text = "\(result.responseObject!)"
+//                success()
 //        }
+//    })
+                                       
     }
 
     private func confirm3ds(_ sale3ds: PlatonApplePay3DS) {

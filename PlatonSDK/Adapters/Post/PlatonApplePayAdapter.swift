@@ -28,7 +28,7 @@ final public class PlatonApplePayAdapter: PlatonBaseAdapter {
                     orderDescription: String,
                     amount: Float,
                     termsUrl3ds: String,
-                    completion: PlatonCalbackWrapper? = nil) {
+                    completion: PlatonCalbackWrapper) {
         
         let params: PlatonParams = [
             .clientKey: clientKey,
@@ -62,7 +62,7 @@ final public class PlatonApplePayAdapter: PlatonBaseAdapter {
             case .failure(let error):
                 response = PlatonApplePayResponseWrapper(responseEnum: .failure, platonBaseProtocol: error)
             }
-            completion?.callback?(response)
+            completion.callback?(response)
         }
         
     }
