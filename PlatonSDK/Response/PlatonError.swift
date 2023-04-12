@@ -31,68 +31,48 @@ public enum PlatonErrorType: Int, Decodable {
         }
     }
 }
-        /// Error model which using for all failure response
-        @objc
-public class PlatonError: NSObject, Decodable, PlatonBaseProtocol {
-    public var customDescription: String
+
+@objc(PlatonError)
+public class PlatonError: PlatonBaseProtocol {
     
-    public var action: PlatonMethodAction
+    /// Specified message
+    public let message: String
     
-    public var orderId: String?
+    /// Types of error.
+    public let type: PlatonErrorType
     
-    public var transId: String?
-    
-            /// Value that system returns on request
-            @objc
-            public let result: PlatonResult
-            
-            /// Specified message
-            @objc
-            public let message: String
-            
-            /// Types of error.
-            @objc
-            public let type: PlatonErrorType
-            
-            /// Error code
-            @objc
-            public let code: Int
-            
-            @objc
-            public init (result: PlatonResult = .error, message: String? = nil, type: PlatonErrorType = .unknown, code: Int = 0) {
-                
-                customDescription = ""
-                
-                self.action = PlatonMethodAction.capture
-                
-                self.result = result
-                self.code = code
-                
-                if type == .unknown && code == -1009 {
-                    self.type = .noInternet
-                } else {
-                    self.type = type
-                }
-                
-                if let unwMessage = message {
-                    self.message = unwMessage
-                } else {
-                    self.message = type.stringValue
-                }
-                
-            }
-            
-    required public init(from decoder: Decoder) throws {
-              
-                customDescription = ""
-                let container = try decoder.container(keyedBy: CodingKeys.self)
+    /// Error code
+    public let code: Int
+
+    public init (result: PlatonResult = .error, message: String? = nil, type: PlatonErrorType = .unknown, code: Int = 0) {
+        self.code = code
         
-                self.action = try container.decode(PlatonMethodAction.self, forKey: .action)
-                self.result = try container.decode(PlatonResult.self, forKey: .result)
-                self.message = try container.decode(String.self, forKey: .message)
-                self.type = .fromServer
-                self.code = 0
-            }
+        if type == .unknown && code == -1009 {
+            self.type = .noInternet
+        } else {
+            self.type = type
+        }
+        
+        if let unwMessage = message {
+            self.message = unwMessage
+        } else {
+            self.message = type.stringValue
+        }
+        
+        try super.init(action: PlatonMethodAction.capture, result: result, orderId: "", transId: "")
+    }
+
+    required public init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+
+        //self.result = try container.decode(PlatonResult.self, forKey: .result)
+        self.message = try container.decode(String.self, forKey: .message)
+        self.type = .fromServer
+        self.code = 0
+        
+        try super.init(from: decoder)
+    }
+
             
             enum CodingKeys: String, CodingKey {
                 case result = "result"
@@ -100,6 +80,8 @@ public class PlatonError: NSObject, Decodable, PlatonBaseProtocol {
                 case action = "action"
             }
         }
+        /// Error model which using for all failure response
+
 
 
 

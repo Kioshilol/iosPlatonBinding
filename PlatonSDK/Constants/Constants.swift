@@ -48,7 +48,7 @@ public enum PlatonMethodAction: Int, Decodable, PlatonParametersProtocol {
     public var platonParams: [PlatonMethodProperty : Any?] {
         return [
             //TODO: check if there is difference between rawValue and stringValue
-            PlatonMethodProperty.action: self.rawValue
+            PlatonMethodProperty.action: self.stringValue
         ]
     }
     
@@ -322,7 +322,7 @@ public enum PlatonMethodProperty: Int, Decodable {
         case .orderDescription:
             return "order_description"
         case .orderId:
-            return "orderId"
+            return "order_id"
         case .paReq:
             return "paReq"
         case .payerAddress:

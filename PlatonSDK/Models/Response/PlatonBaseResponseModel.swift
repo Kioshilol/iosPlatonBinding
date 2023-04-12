@@ -4,8 +4,29 @@ import Foundation
 // MARK: - Protocols
 
 
-@objc
-public protocol PlatonBaseProtocol: PlatonCustomDescribe {
+@objc(PlatonBaseProtocol)
+public class PlatonBaseProtocol: NSObject, Decodable, IPlatonBaseProtocol{
+    public var action: PlatonMethodAction
+    
+    public var result: PlatonResult
+    
+    public var orderId: String?
+    
+    public var transId: String?
+    
+    public var customDescription: String
+    
+    public init(action: PlatonMethodAction, result: PlatonResult, orderId: String, transId: String) {
+        self.customDescription = ""
+        self.action = action
+        self.result = result
+        self.orderId = orderId
+        self.transId = transId
+    }
+}
+
+@objc(IPlatonBaseProtocol)
+public protocol IPlatonBaseProtocol: PlatonCustomDescribe {
     
     /// When you make request to Payment Platform, you need to specify action, that needs to be done
     var action: PlatonMethodAction { get }
@@ -110,33 +131,7 @@ public protocol PlatonCardProtocol: Decodable {
 
 // MARK: - Models
 
-public class PlatonBaseResponseModel: NSObject, PlatonBaseProtocol {
-    
-    public var customDescription: String
-    
-    public let action: PlatonMethodAction
-    
-    public let result: PlatonResult
-    
-    public let orderId: String?
-    
-    public let transId: String?
-    
-    public init(action: PlatonMethodAction, result: PlatonResult, orderId: String, transId: String) {
-        customDescription = ""
-        self.action = action
-        self.result = result
-        self.orderId = orderId
-        self.transId = transId
-    }
-    
-    required public init(from decoder: Decoder) throws {
-        customDescription = ""
-        self.action = PlatonMethodAction.capture
-        self.result = PlatonResult.accepted
-        self.orderId = ""
-        self.transId = ""
-    }
+public class PlatonBaseResponseModel: PlatonBaseProtocol{
     
     private enum CodingKeys: String, CodingKey {
         case action, result

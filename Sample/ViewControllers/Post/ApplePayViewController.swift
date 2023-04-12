@@ -5,7 +5,7 @@ import PassKit
 
 private let clientKey = "test" // !!! Set real value
 private let termsUrl3ds = "https://www.google.com/" // !!! Set real value
-private let merchantIdentifier = "merchant.platon.ua" // !!! Set real value
+private let merchantIdentifier = "merchant.qwe.plt" // !!! Set real value
 private let ipAddress = "111.111.111.111" // !!! Set real value
 
 class ApplePayViewController: UIViewController {
@@ -50,8 +50,8 @@ class ApplePayViewController: UIViewController {
             tfCapturreButton.addSubview(applePayButton)
             tfCapturreButton.setTitle(nil, for: .normal)
             paymentRequest = PKPaymentRequest()
-            paymentRequest?.currencyCode = "UAH"
-            paymentRequest?.countryCode = "UA"
+            paymentRequest?.currencyCode = "USD"
+            paymentRequest?.countryCode = "US"
             paymentRequest?.merchantIdentifier = merchantIdentifier
             paymentRequest?.paymentSummaryItems = [PKPaymentSummaryItem(label: "Test", amount: NSDecimalNumber(string: tfPartialAmount.text))]
             paymentRequest?.supportedNetworks = [.visa, .masterCard, .chinaUnionPay]
@@ -65,14 +65,18 @@ class ApplePayViewController: UIViewController {
         let contact = payment.billingContact ?? payment.shippingContact ?? {let contact = PKContact()
                 contact.emailAddress = "test@user.com"
                 return contact}()
+        
         let address = contact.postalAddress ?? CNPostalAddress()
         let name = contact.name ?? PersonNameComponents()
   
-        guard let tokenData = try? JSONEncoder().encode(payment.token.paymentData),
-            let token = String(data: tokenData, encoding: .utf8) else {
-            failure(nil)
-            return
-        }
+        guard let tokenData = try? JSONEncoder().encode(payment.token),
+                    let token = String(data: tokenData, encoding: .utf8) else {
+                    failure(nil)
+                    return
+                }
+    
+
+        let cardCryptogramPacketString = String(describing: payment.token.paymentData)
         let payer = PlatonPayerApplePay(firstName: name.givenName ?? "",
                                         lastName: name.familyName ?? "",
                                         midleName: name.middleName ?? "",
@@ -91,7 +95,7 @@ class ApplePayViewController: UIViewController {
             paymentToken: token,
             clientKey: clientKey,
             channelId: "",
-            orderId: tfOrderId.text ?? "",
+            orderId: tfOrderId.text ?? "1",
             orderDescription: tfOrderDescription.text ?? "",
             amount: Float(tfPartialAmount.text ?? "") ?? 0,
             termsUrl3ds: termsUrl3ds,
@@ -150,9 +154,12 @@ extension ApplePayViewController: PKPaymentAuthorizationViewControllerDelegate {
     func paymentAuthorizationViewControllerDidFinish(_ controller: PKPaymentAuthorizationViewController) {
         controller.dismiss(animated: true, completion: nil)
     }
+    
 
     @available(iOS 11.0, *)
-    func paymentAuthorizationViewController(_ controller: PKPaymentAuthorizationViewController, didAuthorizePayment payment: PKPayment, handler completion: @escaping (PKPaymentAuthorizationResult) -> Void) {
+    func paymentAuthorizationViewController(_ controller: PKPaymentAuthorizationViewController, didAuthorizePayment payment: PKPayment, handler completion: @escaping (PKPaymentAuthorizationResult) -> Void)
+    {
+        let status = PKPaymentAuthorizationStatus.success
         proceed(payment: payment, successHandler: {
             completion(.init(status: .success, errors: nil))
         }) { (error) in

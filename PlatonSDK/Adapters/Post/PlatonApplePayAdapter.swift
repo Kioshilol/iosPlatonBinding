@@ -47,6 +47,7 @@ final public class PlatonApplePayAdapter: PlatonBaseAdapter {
 
             let response: PlatonApplePayResponseWrapper
 
+            
             switch result {
             case .success(let data):
                 
@@ -56,16 +57,27 @@ final public class PlatonApplePayAdapter: PlatonBaseAdapter {
                     response = PlatonApplePayResponseWrapper(responseEnum: .unsuccess, platonBaseProtocol: decoded)
                 } else if let decoded = try? jsonDecoder.decode(PlatonApplePaySuccess.self, from: data) {
                     response = PlatonApplePayResponseWrapper(responseEnum: .success, platonBaseProtocol: decoded)
-                } else {
+                }
+                else {
+                    
+                    if let decoded = try? jsonDecoder.decode(UnknownErrorResult.self, from: data){
+                        var d2 = decoded
+                    }
                     response = PlatonApplePayResponseWrapper(responseEnum: .failure, platonBaseProtocol: PlatonError(type: .parse))
                 }
             case .failure(let error):
                 response = PlatonApplePayResponseWrapper(responseEnum: .failure, platonBaseProtocol: error)
             }
+            
             completion.callback?(response)
         }
         
     }
+}
+
+public class UnknownErrorResult : Decodable{
+    var result: String
+    var error_message: String
 }
 
 extension PKPaymentToken: Encodable {
